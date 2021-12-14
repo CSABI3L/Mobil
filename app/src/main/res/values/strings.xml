@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Joker</string>
+    <string name="created_by_zolnai_csaba">Created by Zolnai Csaba</string>
+    <string name="tell_a_joke_and_shake_me">Tell a joke and shake me!</string>
+</resources>

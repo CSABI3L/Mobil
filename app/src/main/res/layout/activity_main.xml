@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contsrID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Created by Zolnai Csaba"
+        android:textColor="#DD2C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:text="Select a sound and shake me!"
+        android:textColor="#DD2C00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonDrum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:background="@color/orange"
+        android:scaleType="fitCenter"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/drum3"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
+        android:focusable="true"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBell"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bell"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:focusable="true"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDrum"
+        app:srcCompat="@drawable/fart"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="TODO"
+        android:focusable="true" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGoat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBell"
+        app:srcCompat="@drawable/goat"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
